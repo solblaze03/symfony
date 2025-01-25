@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lista ciclos{% endblock %}
+
+
+{% block body %}
+
+<style>
+
+    h1 {
+        font-family:sans-serif;
+    }
+    td {
+        padding: 12px;
+    }
+    th{
+        text-align: left;
+    }
+    table{
+        padding: 10px;
+    }
+</style>
+
+
+    <h1>Lista de ciclos</h1>
+    <table class= "centros" border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            
+            <th>Ciclo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for ciclo in ciclos %}
+
+            <tr>
+                <td>{{ ciclo.id }}</td>
+                <td>{{ ciclo.nom }}</td>
+                
+            </tr>
+
+        {% endfor %}
+    </tbody>
+    </table>
+
+
+
+
+
+{% endblock %}

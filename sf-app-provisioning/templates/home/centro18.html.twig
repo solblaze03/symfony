@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{centro.centre}}{% endblock %}
+
+
+{% block body %}
+
+<style>
+
+    h1 {
+        font-family:sans-serif;
+        margin: 20px;
+    }
+    td {
+        padding: 12px;
+    }
+    th{
+        text-align: left;
+    }
+    table{
+        padding: 10px;
+    }
+    li{
+        font-family:sans-serif;
+        font-size: 20px;
+        margin: 10px;
+    }
+    p{
+        font-family:sans-serif;
+        font-size: 20px;
+        margin: 20px;
+    }
+</style>
+
+
+    <h1>{{centro.centre}}</h1>
+    <p>Descripción</p>
+    <ul>
+        <li>id: {{centro.id}}</li>
+        <li>Codigo: {{centro.codi}}</li>
+        <li>Localidad: {{centro.localitat}}</li>
+        <li>Telefono: {{centro.telefon}}</li>
+        <li>Query: {{centro.query}}</li>
+        
+
+    </ul>
+    
+
+
+
+
+{% endblock %}
